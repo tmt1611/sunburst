@@ -21,7 +21,7 @@ jobs:
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
-        pip install -r requirements.txt  # If you have any dependencies
+        pip install -r tmt1611.github.io/requirements.txt  # If you have any dependencies
 
     - name: Run Python script generating html
       run: python tmt1611.github.io/main.py  # Draw sunburst and generate HTML
