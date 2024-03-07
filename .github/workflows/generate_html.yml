@@ -23,6 +23,11 @@ jobs:
         python -m pip install --upgrade pip
         pip install -r tmt1611.github.io/requirements.txt  # If you have any dependencies
 
+    - name: Fetch and merge remote changes
+      run: |
+        git fetch origin
+        git merge origin/main
+        
     - name: Run Python script generating html
       run: python tmt1611.github.io/main.py  # Draw sunburst and generate HTML
 
