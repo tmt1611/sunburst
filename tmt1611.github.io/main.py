@@ -23,4 +23,24 @@ if __name__ == "__main__":
 
     # fig.update_traces(insidetextorientation='radial')
 
+    fig.update_layout(
+    margin=dict(t=10, l=10, r=10, b=10),
+    annotations=[
+        dict(
+            x=0,
+            y=0,
+            xref='paper',
+            yref='paper',
+            text='Generated on ' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            showarrow=False,
+            font=dict(size=14),
+            bgcolor='rgba(255, 255, 255, 1)',
+            bordercolor='rgba(0, 0, 0, 0)',
+            borderwidth=1,
+            borderpad=4,
+            align='left'
+        )
+    ]
+)
+
     fig.write_html("tmt1611.github.io/index.html", include_plotlyjs="cdn")
