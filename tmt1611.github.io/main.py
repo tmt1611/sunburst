@@ -44,4 +44,4 @@ if __name__ == "__main__":
     ]
 )
 
-    fig.write_html("tmt1611.github.io/index.html", include_plotlyjs="cdn")
+    fig.write_html("index.html", include_plotlyjs="cdn")
