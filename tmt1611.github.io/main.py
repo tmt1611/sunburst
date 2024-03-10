@@ -56,7 +56,8 @@ fig3.update_layout(
             y=0,
             xref='paper',
             yref='paper',
-            text='Generated on ' + datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S'),
+            text="Generated on " + datetime.datetime.now().strftime('%d-%m-%Y %H:%M:%S')+
+                " | <a href='https://tmt1611.github.io/network_graph'> Network map</a>",
             showarrow=False,
             font=dict(size=14),
             bgcolor='rgba(255, 255, 255, 1)',
